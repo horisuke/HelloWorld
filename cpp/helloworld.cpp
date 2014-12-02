@@ -9,7 +9,7 @@ int main()
 	std::cout << "push from O-MainPC!" <<  std::endl;
 	std::cout << "push from O-MainPC again!!" <<  std::endl;
 	std::cout << "push from O-MainPC by https." << std::endl;
-	std::cout << "push from O-MainPC by ssh." << std::endl;
+	std::cout << "push from O-MainPC by ssh!!" << std::endl;
 
 	return 0;
 }
