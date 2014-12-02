@@ -8,6 +8,7 @@ int main()
 	std::cout << "push from SubPC." << std::endl;
 	std::cout << "push from O-MainPC!" <<  std::endl;
 	std::cout << "push from O-MainPC again!!" <<  std::endl;
+	std::cout << "push from O-MainPC by https." << std::endl;
 
 	return 0;
 }
