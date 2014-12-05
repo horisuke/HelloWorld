@@ -16,3 +16,5 @@ request = urllib.request.Request(url)
 request.set_proxy(proxies, 'http')
 response = urllib.request.urlopen(request)
 print(response.read().decode('utf-8'))
+
+#python***
