@@ -9,7 +9,7 @@
 
 #python3.4
 import urllib.request
-proxies = 'http://proxy.server:port'
+proxies = 'proxy.co.jp:port'
 url = 'http://www.yahoo.co.jp'
 request = urllib.request.Request(url)
 request.set_proxy(proxies, 'http')
