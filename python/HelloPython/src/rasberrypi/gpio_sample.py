@@ -1,4 +1,4 @@
-#described by python2.7!
+#pyhton2.7
 import RPi.GPIO as GPIO
 from time import sleep
 
@@ -10,3 +10,6 @@ while True:
     sleep(0.5)
     GPIO.output(25, GPIO.LOW)
     sleep(0.5)
+    
+
+
