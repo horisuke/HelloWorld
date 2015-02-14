@@ -1,7 +1,7 @@
 #include "myfunc.h"
 
 Myfunc::Myfunc():
-y(110),b(2.5)
+y(110),b(2.5),x(50),a(1.2)
 {
 }
 
