@@ -5,6 +5,7 @@
 
 //g++ -shared -fPIC -o libmyfunc.so myfunc.cpp -I include/
 //g++ -o mymain -I include/ -L . mymain.cpp  -lmyfunc
+//export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
 
 int main(){
 	Myfunc my_entity;
@@ -22,6 +23,6 @@ int main(){
 
 	//my_entity.appendString(my_entity.str, "abc");
 	std::cout << "str = " << my_entity.appendString(my_entity.str, "abc") << std::endl;
-	
+
 	return 0;
 }
