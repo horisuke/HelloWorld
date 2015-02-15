@@ -1,42 +1,55 @@
 #include "myfunc.h"
 
+//g++ -shared -fPIC -o libmyfunc.so myfunc.cpp -I include/
+
 Myfunc::Myfunc():
-y(110),b(2.5),x(50),a(1.2)
+m_y(110),m_b(2.5),x(50),a(1.2)
 {
 }
 
-int Myfunc::get_y()
+std::string Myfunc::get_y(int& y)
 {
-	return y;
+	y = m_y;
+	return "OK";
 }
 
-double Myfunc::get_b()
+std::string Myfunc::get_b(double& b)
 {
-	return b;
+	b = m_b;
+	return "OK";
 }
 
-int Myfunc::add(int x, int y)
+std::string Myfunc::set_y(int set_y)
 {
-	return x + y;
+	m_y = set_y;
+	return "OK";
 }
 
-char Myfunc::changeToCapitalCharacter(char c)
+std::string Myfunc::add(int add1, int add2, int& ret)
+{
+	ret = add1 + add2;
+	return "OK";
+}
+
+std::string Myfunc::changeToCapitalCharacter(char c, char& Cc)
 {
 	switch(c){
 		case 'a':
-			return 'A';
+			Cc = 'A';
+			return "OK";
+		case 'b':
+			Cc = 'B';
+			return "OK";
 		default:
-			return 0;
+			return "OK";
 	}
-
 
 }
 
-std::string Myfunc::appendString(std::string mystr, std::string mystr2)
+std::string Myfunc::appendString(std::string mystr, std::string mystr2, std::string& retstr)
 {
-
-	return mystr.append(mystr2);
-
+	retstr = mystr.append(mystr2);
+	return "OK";
 }
 
 

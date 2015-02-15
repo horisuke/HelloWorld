@@ -11,23 +11,26 @@ public:
 	Myfunc();
 
 	//get y value which is the private/int variable.
-	int get_y();
+	std::string get_y(int& y);
 
 	//get b value which is the private/double variable.
-	double get_b();
+	std::string get_b(double& b);
+
+	//set m_y value which is the private/int variable.
+	std::string set_y(int set_y);
 
 	//get the result of x + y.
-	int add(int x, int y);
+	std::string add(int add1, int add2, int& ret);
 
 	//change the c to Capital character.
-	char changeToCapitalCharacter(char c);
+	std::string changeToCapitalCharacter(char c, char& Cc);
 
 	//
-	std::string appendString(std::string mystr, std::string mystr2);
+	std::string appendString(std::string mystr, std::string mystr2, std::string& retstr);
  
 private:
-	int y;
-	double b;
+	int m_y;
+	double m_b;
 
 };
 
