@@ -24,10 +24,6 @@ int main(){
 	std::cout << "c = " << Cc << std::endl;
 	my_entity.str = "hoge";
 	std::cout << "str = " << my_entity.str << std::endl;
-
-	//my_entity.str.append(5, 'e');
-	//my_entity.str.append("abc");
-
 	my_entity.appendString(my_entity.str, "abc", retstr);
 	std::cout << "str = " << retstr << std::endl;
 
