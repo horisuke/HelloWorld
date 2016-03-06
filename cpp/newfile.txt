@@ -1,5 +1,5 @@
 This is the file created newly.
 added new line.
 
-1:This sentence is added in staging area.
+1:This sentence is added in staging areas.
 
